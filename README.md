@@ -3,6 +3,8 @@
 ## Introduction
 
 Welcome to CrackEd, an educational platform designed specifically for the Islamic University of Technology (IUT), Bangladesh, admission test. This documentation provides a comprehensive overview of the installation process, platform’s features and functionalities, categorized for students, tutors, and admins.
+
+Live at: [crack-ed-app.vercel.app](https://crack-ed-app.vercel.app/)
 <br><br>
 ![image](https://github.com/takitajwar17/CrackEd-App/assets/111155827/d56d84f5-7815-4f7c-9182-02204b33860c)
 
@@ -54,17 +56,23 @@ To set up and run CrackEd locally, follow these steps:
 2. **Install Dependencies**:
    Navigate to the `client` directory and install the required npm packages.
    ```bash
+   cd server
    npm install
-   cd client
+   cd ../client
    npm install
    ```
 
 3. **Run the Application**:
-   To run both the frontend and backend concurrently, use the following command from the root directory:
+   To run the frontend, use the following command from the root directory:
    ```bash
-   npm run dev
+   cd client
+   npm run start
    ```
-
+   To run the backend, use the following command from the root directory:
+   ```bash
+   cd server
+   nodemon server.js
+   ```
 ### Accessing the Application
 
 1. **Browser Compatibility**: Ensure you are using a modern browser such as Google Chrome, Mozilla Firefox, Microsoft Edge, or Safari.
